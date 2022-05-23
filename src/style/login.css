@@ -1,0 +1,52 @@
+.pmb-cor{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 90vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.login-content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-content form{
+    width: 100%;
+    height: auto;
+    height: 70vh;
+}
+
+.login-content div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-content div input{
+    height: 35px;
+    border: 1px solid rgb(107, 103, 103);
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-content button{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 480px) {
+    .pmb-cor{
+        display: none;
+    }
+}

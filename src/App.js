@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./components/Homepage";
+import Login from "./components/Login";
+import NavigationBar from "./components/NavigationBar";
+import Profile from "./components/Profile";
+import Register from "./components/Register";
 
 function App() {
+  // const dataRegister = JSON.parse(window.localStorage.getItem("register"));
+  // console.log(dataRegister);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<NavigationBar />}>
+            <Route index element={<Login />} />
+            <Route path="/home" element={<Homepage />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/register" element={<Register />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

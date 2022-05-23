@@ -1,0 +1,54 @@
+.register{
+    background: url('https://media.istockphoto.com/photos/colored-powder-explosion-on-white-background-picture-id1132442970?b=1&k=20&m=1132442970&s=170667a&w=0&h=qZU1t7UPVUZanRUaPIrTa0IJejHGrNQldpWTl_v92M0=');
+    background-size: cover;
+}
+
+.register-content form{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-content form div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.register-content form div label{
+    font-weight: bolder;
+}
+
+.register-content form div input{
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(214, 209, 209);
+}
+
+.register-content form button{
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    height: 35px;
+}
+
+.register-content form p span{
+    color: blue;
+    font-weight: 600;
+}

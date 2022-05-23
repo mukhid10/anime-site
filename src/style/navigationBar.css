@@ -1,0 +1,14 @@
+.navigationBar{
+    /* height: 10vh; */
+    background: rgb(58, 37, 37);
+    font-weight: 700;
+}
+
+#basic-navbar-nav{
+    flex-grow: 0;
+}
+
+#basic-nav-dropdown {
+    color: white;
+}
+
